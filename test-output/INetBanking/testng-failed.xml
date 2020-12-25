@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [INetBanking]">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="com.inetbanking.Utilities.Reporting"/>
+  </listeners>
+  <test name="BankingApp Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.inetbanking.testCases.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.inetbanking.testCases.LoginTest -->
+    </classes>
+  </test> <!-- BankingApp Test(failed) -->
+  <test name="BankingApp Test1(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.inetbanking.testCases.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.inetbanking.testCases.LoginTest -->
+    </classes>
+  </test> <!-- BankingApp Test1(failed) -->
+</suite> <!-- Failed suite [INetBanking] -->

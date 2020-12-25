@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FacebookSuite]" parallel="tests">
+  <parameter name="password" value="emft@1234"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="email" value="wajeet1994@gmail.com"/>
+  <test name="FacebookChromeLoginTest(failed)" parallel="tests">
+    <parameter name="password" value="emft@1234"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="email" value="wajeet1994@gmail.com"/>
+    <classes>
+      <class name="com.inetbanking.pageObject.Parameterization">
+        <methods>
+          <include name="FacebookLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.inetbanking.pageObject.Parameterization -->
+    </classes>
+  </test> <!-- FacebookChromeLoginTest(failed) -->
+  <test name="FacebookFirefoxLoginTest(failed)" parallel="tests">
+    <parameter name="password" value="emft@1234"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="email" value="wajeet1994@gmail.com"/>
+    <classes>
+      <class name="com.inetbanking.pageObject.Parameterization">
+        <methods>
+          <include name="FacebookLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.inetbanking.pageObject.Parameterization -->
+    </classes>
+  </test> <!-- FacebookFirefoxLoginTest(failed) -->
+</suite> <!-- Failed suite [FacebookSuite] -->

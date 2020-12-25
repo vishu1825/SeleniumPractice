@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FacebookSuite" parallel="tests">
+	<test name="FacebookChromeLoginTest">
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="https://www.facebook.com/login/" />
+
+		<parameter name="email" value="wajeet1994@gmail.com" />
+		<parameter name="password" value="emft@1234" />
+
+		<classes>
+			<class name="com.inetbanking.pageObject.Parameterization" />
+		</classes>
+	</test> <!-- FacebookLoginTest -->
+
+	<test name="FacebookFirefoxLoginTest">
+		<parameter name="browser" value="firefox" />
+		<parameter name="url" value="https://www.facebook.com/login/" />
+
+		<parameter name="email" value="wajeet1994@gmail.com" />
+		<parameter name="password" value="emft@1234" />
+
+		<classes>
+			<class name="com.inetbanking.pageObject.Parameterization" />
+		</classes>
+	</test> <!-- FacebookLoginTest -->
+
+
+</suite> <!-- FacebookSuite -->

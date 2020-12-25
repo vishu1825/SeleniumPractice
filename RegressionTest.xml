@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite2">
+  <test name="RegressionTest">
+    <classes>
+      <class name="com.inetbanking.pageObject.Demo222">
+      <methods>
+      <include name="ab"/>
+      <include name="add"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- RegressionTest -->
+</suite> <!-- Suite2 -->
